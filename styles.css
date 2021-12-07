@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* This solves some issue related height witdh padding and many more */
+    font-family: Helvetica;
+}
+
+body{
+    display: flex;
+    /* flex container expands and shrinks acc to content */
+    justify-content: center;
+    /* aparently justify-content is like for horizontal center */
+    height: 100vh;
+    /* it is view height */
+    border-color: salmon;
+    align-items: center;
+    /* align-items is for verticle center or positioning */
+    padding: 10px;
+    background: linear-gradient(140deg, #EADEDB , #cc74b0 , #b7ca47 );
+}
+
+.container{
+    max-width: 600px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 20px 25px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.container .reg{
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* .container .reg::before{
+    content:'';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(140deg, #EADEDB , #cc74b0 , #b7ca47 );
+} */
+
+.container form .ud{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .ud .input{
+    
+    width: 48%;
+    /* this means 2 are here and 48 means one is little bigger than other */
+    margin: 15px 0 5px 0;
+}
+form .ud .details{
+    display: block;
+    font-weight: 500;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+    
+}
+.ud .input input{
+    /* aparently .input is class and input is the plavce for input */
+    height: 30px;
+    width: 100%;
+    /* outline-color: none; */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+.ud .input input:focus,
+.ud .input input:valid{
+    border-color: #9b59b6;
+}
+.genderdetails{
+    padding-top: 20px;
+}
+form .genderdetails .gendertittle{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .genderdetails .gencat{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+form .submitb{
+    height: 45px;
+    margin: 30px 0;
+}
+
+.submitb input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    font-size: larger;
+    border: 1px;
+    border-radius: 5px;
+    background: linear-gradient(140deg, #EADEDB , #cc74b0 , #b7ca47 );
+}
+.submitb input:hover{
+    background: linear-gradient(-140deg, #EADEDB , #cc74b0 , #b7ca47 );
+}
